@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -78,7 +79,7 @@ public class MainActivity extends SherlockListActivity {
 			 * @return An {@link Undoable} or {@code null} if this deletion
 			 * shouldn't be undoable.
 			 */
-			public SwipeDismissList.Undoable onDismiss(ListView listView, final int position) {
+			public SwipeDismissList.Undoable onDismiss(AbsListView listView, final int position) {
 
 				// Get item that should be deleted from the adapter.
 				final String item = mAdapter.getItem(position);
