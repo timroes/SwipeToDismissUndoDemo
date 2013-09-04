@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.5+'
+    }
+}
+
+apply plugin: 'android'
+
+dependencies {
+    compile "com.android.support:appcompat-v7:18.0.+"
+    compile project(":SwipeToDismissUndoList")
+}
+
+android {
+    buildToolsVersion "18.0.1"
+    compileSdkVersion 18
+}
